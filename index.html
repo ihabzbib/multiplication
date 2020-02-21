@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amelia</title>
+        <link rel="stylesheet" type="text/css" href="multiplication.css">
+    </head>
+<body id="body">
+    <h1 class="title">Amelia's multiplication's practice page</h1>
+    <div class="pannel">
+        <div class="flex">
+            <label for="shuffle" >Shuffle</label>
+            <input type="checkbox" id="shuffle" checked/>
+        </div>
+        <div class="flex">
+            <label for="multTable" >What table do you want to practice?</label>
+            <input class="box" type="text" min="1" max="9" value="3" onkeyup="enforceMinMax(this)" size="1" id="multTable" name="multTable" />
+        </div>
+    </div>
+    <div class="flex">
+        <input type="button" id="verifyBtn" value="Verify All"/>
+    </div>
+    <div class="content" id="content" ></div>
+    <div class="popup" id="popup" >
+        <img id="celebrationImg"/>
+        <overlay id="overlay" />
+    </div>
+</body>
+<script src="multiplication.js"></script>
+</html>
