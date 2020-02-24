@@ -47,7 +47,7 @@ const verify = row => {
 
     notify.innerHTML = result ? 'Correct! &#x2713;' : 'Ooops!!!<br/>Anwser = ' + factor1*factor2;
     notify.className = result ? 'notify correct' : 'notify wrong';
-    notify.setAttribute('correct', !result);
+    notify.setAttribute('correct', result);
     checkAll();
 }
 
